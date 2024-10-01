@@ -1,0 +1,48 @@
+/*
+ * Copyright (c) 2022 Thomas Stranger
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+&uart5 {
+	status = "okay";
+	w1: w1 {
+		compatible = "zephyr,w1-serial";
+
+		ds18b20 {
+			label = "SENSOR_DS18B20_0";
+			compatible = "maxim,ds18b20";
+			family-code = <0x28>;
+			resolution = <12>;
+			status = "okay";
+		};
+		ds18b20_1 {
+			label = "SENSOR_DS18B20_1";
+			compatible = "maxim,ds18b20";
+			family-code = <0x28>;
+			resolution = <12>;
+			status = "okay";
+		};
+		ds18b20_2 {
+			label = "SENSOR_DS18B20_2";
+			compatible = "maxim,ds18b20";
+			family-code = <0x28>;
+			resolution = <12>;
+			status = "okay";
+		};
+		ds18b20_3 {
+			label = "SENSOR_DS18B20_3";
+			compatible = "maxim,ds18b20";
+			family-code = <0x28>;
+			resolution = <12>;
+			status = "okay";
+		};
+		ds18b20_4 {
+			label = "SENSOR_DS18B20_4";
+			compatible = "maxim,ds18b20";
+			family-code = <0x28>;
+			resolution = <12>;
+			status = "okay";
+		};
+	};
+};

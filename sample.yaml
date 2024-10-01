@@ -1,0 +1,5 @@
+sample:
+  name: DS18B20 Temperature Sensor sample
+common:
+  harness: console
+  tags: sensors
